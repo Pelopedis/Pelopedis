@@ -57,6 +57,10 @@ export class LinkifyPipe implements PipeTransform {
 
 ```
 
+## Global Spinner
+
+Source: https://danielk.tech/home/angular-how-to-add-a-loading-spinner
+
 ## Deployment
 
 To build run
