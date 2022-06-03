@@ -4,6 +4,8 @@ BSc (Hons) Computing student, specializing in software development. Well-versed 
 Highly motivated to take every new opportunity to help me expand my knowledge and practical skills in the field. 
 Enjoy working as a team member as well as independently.
 
+## my page: https://devmappouras.github.io/devmappouras
+
 <!--
 **devMappouras/devmappouras** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
