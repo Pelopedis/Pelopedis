@@ -1,4 +1,4 @@
-my page: https://devmappouras.github.io/devmappouras
+## my page: https://devmappouras.github.io/devmappouras
 
   - [Json data store rules](#simple-rules-for-json-formatting-data)
   - [Linkify pipe](#linkify-pipe)
@@ -6,13 +6,13 @@ my page: https://devmappouras.github.io/devmappouras
 
 ## Documentation
 
-# Simple rules for json formatting data
+## Simple rules for json formatting data
 
 - To separate text into paragraphs, use  the new line escape character '\n\n'
 - Add a white space before a link in text strings i.e 'This is some long string\n\n [white_space] https://now-this-is-alink.com'
 - Follow the data formatting in the included data interfaces
 
-# Linkify pipe
+## Linkify pipe
 
 You may want to include links in your project descriptions to reference externally hosted projects.
 
@@ -57,7 +57,7 @@ export class LinkifyPipe implements PipeTransform {
 
 ```
 
-# Deployment
+## Deployment
 
 To build run
 
