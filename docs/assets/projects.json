@@ -1,0 +1,22 @@
+{
+  "projects": [
+    {
+      "preview": "assets/media/projects/portfolio.png",
+      "created_at": "2019-07-20T14:18:15.923+02:00",
+      "name": "This Portfolio Web Application",
+      "description": "I designed the code architecture for this portfolio website and built it from ground up using Angular Framework , \n\nI open sourced the code and uploaded it to github so that other people can use it for their portfolios. \n\nURL is https://github.com/ronald-hove/Angular-Portfolio-Template"
+    },
+    {
+      "preview": "assets/media/projects/villa.png",
+      "created_at": "2019-07-20T14:18:15.923+02:00",
+      "name": "Villa Hout Bay Heights Guest House Website",
+      "description": "I worked on this website from ground up using Angular Framework , Firebase as well as a SQL backend \n\nThe site is a guest house booking site to place booking enquiries \n\nURL is http://houtbayheights.co.za/"
+    },
+    {
+      "preview": "assets/media/projects/road-side.png",
+      "created_at": "2019-07-20T14:24:00.709+02:00",
+      "name": "Built a Hybrid RoadSide Assistance App In Ionic ",
+      "description": "I explain How the app works in my linkedIn Post here \n\nhttps://www.linkedin.com/feed/update/urn:li:activity:6400653831994245120"
+    }
+  ]
+}
