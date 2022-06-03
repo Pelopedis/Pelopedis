@@ -2,6 +2,7 @@
 
   - [Json data store rules](#simple-rules-for-json-formatting-data)
   - [Linkify pipe](#linkify-pipe)
+  - [Global Spinner](#global-spinner)
   - [Deployment](#deployment)
 
 ## Documentation
