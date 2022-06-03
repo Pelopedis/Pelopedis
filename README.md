@@ -1,4 +1,4 @@
-# my page: https://devmappouras.github.io/devmappouras
+my page: https://devmappouras.github.io/devmappouras
 
   - [Json data store rules](#simple-rules-for-json-formatting-data)
   - [Linkify pipe](#linkify-pipe)
