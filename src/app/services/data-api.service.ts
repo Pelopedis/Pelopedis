@@ -24,6 +24,10 @@ export class DataApiService {
     return this.http.get('assets/projects.json').toPromise();
   }
 
+  getCertificates(): Promise<any> {
+    return this.http.get('assets/certificates.json').toPromise();
+  }
+
   getWorkHistory(): Promise<any> {
     return this.http.get('assets/work-experience.json').toPromise();
   }

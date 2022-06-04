@@ -3,13 +3,14 @@ import { Component, OnInit, HostListener } from '@angular/core';
 import { LoaderService } from 'src/app/services/loader.service';
 
 @Component({
-  selector: 'app-home',
+  selector: 'home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
   skills;
   featuredProjects;
+  certificates;
   workExperience;
   profile;
   showMobileImages = false;
@@ -27,10 +28,10 @@ export class HomeComponent implements OnInit {
 
   private async loadData() {
     this.skills = await this.dataApi.getTopSkills();
-    this.featuredProjects = await this.dataApi.getFeaturedProjects();
-    this.workExperience = await this.dataApi.getWorkHistory();
     this.profile = await this.dataApi.getProfile();
-    //this.loaderService.setLoading(false);
+    this.workExperience = await this.dataApi.getWorkHistory();
+    this.certificates = await this.dataApi.getCertificates();
+    this.featuredProjects = await this.dataApi.getFeaturedProjects();
   }
 
   @HostListener('window:resize', ['$event'])

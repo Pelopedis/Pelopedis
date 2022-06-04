@@ -67,6 +67,29 @@
           </div>
         </div>
 
+        <!-- work card -->
+        <div class="row mt-3">
+          <div class="col-lg-12">
+            <div class="card cm-card">
+              <div class="card-body">
+                <h2> Work Experience</h2>
+                <hr class="m-0 mb-3">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="mb-2" *ngFor="let work of workExperience?.work">
+                      <h2>{{work?.title}}</h2>
+                      <p>{{work?.date}}</p>
+                      <p style="white-space: pre-wrap;" class="card-text" [innecmTML]="work?.description"></p>
+                      <a  class="mr-1 cm-skill" *ngFor="let skill of work?.stack" >{{skill}}</a>
+                      <hr class="m-0 mt-3">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- education card -->
         <div class="row mt-3">
           <div class="col-lg-12">
@@ -87,21 +110,29 @@
           </div>
         </div>
 
-        <!-- work card -->
+        <!-- Certificates -->
         <div class="row mt-3">
           <div class="col-lg-12">
             <div class="card cm-card">
               <div class="card-body">
-                <h2> Work Experience</h2>
+                <h2>Certificates</h2>
                 <hr class="m-0 mb-3">
                 <div class="row">
                   <div class="col-lg-12">
-                    <div class="mb-2" *ngFor="let work of workExperience?.work">
-                      <p>{{work?.date}}</p>
-                      <h2>{{work?.title}}</h2>
-                      <p style="white-space: pre-wrap;" class="card-text" [innecmTML]="work?.description"></p>
-                      <a  class="mr-1 cm-skill" *ngFor="let skill of work?.stack" >{{skill}}</a>
-                      <hr class="m-0 mt-3">
+                    <div class="card mb-3" *ngFor="let certificate of certificates?.certificates">
+                      <div class="row no-gutters">
+                        <div class="col-md-4">
+                        <div
+                          [ngClass]="{'cm-preview-image': !showMobileImages, 'cm-preview-image-mobile': showMobileImages}"
+                          [ngStyle]="{'background-image': 'url(' + certificate?.preview + ')'}">
+                        </div>
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h2 class="card-title">{{certificate?.name}}</h2>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -109,6 +140,7 @@
             </div>
           </div>
         </div>
+
 
         <!-- projects -->
         <div class="row mt-3">
@@ -124,9 +156,7 @@
                         <div class="col-md-4">
                         <div
                           [ngClass]="{'cm-preview-image': !showMobileImages, 'cm-preview-image-mobile': showMobileImages}"
-                          [ngStyle]="{
-                            'background-image': 'url(' + project?.preview + ')'
-                          }">
+                          [ngStyle]="{'background-image': 'url(' + project?.preview + ')'}">
                         </div>
                         </div>
                         <div class="col-md-8">
@@ -148,4 +178,4 @@
     </div>
   </div>
 
-<app-spinner></app-spinner>
+<spinner></spinner>

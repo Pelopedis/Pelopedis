@@ -6,7 +6,6 @@ export interface Projects {
 
 export interface Project {
   preview: string;
-  created_at: string;
   name: string;
   description: string;
 }
