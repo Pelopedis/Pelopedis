@@ -1,5 +1,27 @@
-### Print('Welcome To DevMappouras Profile'); 👋
+# AngularWebsite
 
-I am a dedicated and skilled Full Stack Developer with three years of experience in the field. My interest in technology, combined with a solid foundation in both front-end and back-end development, has enabled me to create innovative and efficient solutions for a variety of projects. I thrive in collaborative environments and am committed to staying current with the latest industry trends and best practices. With a keen eye for detail and a commitment to delivering high-quality code, I am poised to contribute my expertise to your team's success.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.2.
 
-## my website: [devmappouras.vercel.app](https://devmappouras.vercel.app/)
+## Development server
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+
+## Code scaffolding
+
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
