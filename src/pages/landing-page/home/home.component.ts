@@ -1,8 +1,8 @@
-import { DataApiService } from '../../services/data-api.service';
+import { DataApiService } from '../../../services/data-api.service';
 import { Component, OnInit, HostListener } from '@angular/core';
-import { LoaderService } from '../../services/loader.service';
-import { SpinnerComponent } from '../shared-components/spinner/spinner.component';
-import { LinkifyPipe } from '../../pipes/linkify.pipe';
+import { LoaderService } from '../../../services/loader.service';
+import { SpinnerComponent } from '../../shared-components/spinner/spinner.component';
+import { LinkifyPipe } from '../../../pipes/linkify.pipe';
 import { CommonModule } from '@angular/common';
 
 @Component({
