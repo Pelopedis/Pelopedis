@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import Typed from 'typed.js';
 
@@ -5,7 +6,8 @@ import Typed from 'typed.js';
   selector: 'app-home',
   standalone: true,
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
+  imports: [CommonModule]
  })
 export class HomeComponent implements OnInit {
 
