@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-curriculum-vitae',
   templateUrl: './curriculum-vitae.component.html',
-  styleUrls: ['./curriculum-vitae.component.css'],
+  styleUrls: ['./curriculum-vitae.component.scss'],
   standalone: true,
 })
 export class CurriculumVitaeComponent implements OnInit {
