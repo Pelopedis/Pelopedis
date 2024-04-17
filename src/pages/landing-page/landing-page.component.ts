@@ -6,6 +6,7 @@ import { ReferencesComponent } from './references/references.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ContactComponent } from './contact/contact.component';
 import Typed from 'typed.js';
+import { CvComponent } from '../cv/cv.component';
 
 @Component({
   selector: 'app-landing-page',

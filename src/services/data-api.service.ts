@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, firstValueFrom } from 'rxjs';
 
 
 @Injectable({
@@ -13,22 +13,22 @@ export class DataApiService {
   ) { }
 
   getProfile(): Promise<any> {
-    return this.http.get('assets/profile.json').toPromise();
+    return firstValueFrom(this.http.get('assets/profile.json'));
   }
 
   getTopSkills(): Promise<any> {
-    return this.http.get('assets/top-skills.json').toPromise();
+    return firstValueFrom(this.http.get('assets/top-skills.json'));
   }
 
   getFeaturedProjects(): Promise<any> {
-    return this.http.get('assets/projects.json').toPromise();
+    return firstValueFrom(this.http.get('assets/projects.json'));
   }
 
   getCertificates(): Promise<any> {
-    return this.http.get('assets/certificates.json').toPromise();
+    return firstValueFrom(this.http.get('assets/certificates.json'));
   }
 
   getWorkHistory(): Promise<any> {
-    return this.http.get('assets/work-experience.json').toPromise();
+    return firstValueFrom(this.http.get('assets/work-experience.json'));
   }
 }
