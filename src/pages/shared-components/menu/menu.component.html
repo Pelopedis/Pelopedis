@@ -1,0 +1,5 @@
+<div class="mobile-menu" *ngIf="isMobile" (click)="toggleMenu()">
+  <i class="fas fa-bars"></i>
+</div>
+
+<p-tabMenu [model]="items" class="desktop-menu custom-tabMenu" *ngIf="!isMobile"></p-tabMenu>

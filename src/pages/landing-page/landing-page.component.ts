@@ -6,8 +6,8 @@ import { ReferencesComponent } from './references/references.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ContactComponent } from './contact/contact.component';
 import Typed from 'typed.js';
-import { CvComponent } from '../cv/cv.component';
 import { TabMenuModule } from 'primeng/tabmenu';
+import { MenuComponent } from '../shared-components/menu/menu.component';
 
 @Component({
   selector: 'app-landing-page',
@@ -21,17 +21,12 @@ import { TabMenuModule } from 'primeng/tabmenu';
     ReferencesComponent,
     SkillsComponent,
     ContactComponent,
-    TabMenuModule,]
+    TabMenuModule,
+    MenuComponent]
 })
 export class LandingPageComponent implements OnInit {
   title = 'Welcome to Dev Mappouras Website';
-  items = [
-    {label: 'Home', icon: 'pi pi-fw pi-home', routerLink: '/'},
-    {label: 'My CV', icon: 'pi pi-fw pi-info', routerLink: '/cv'},
-    {label: 'My Blog', icon: 'pi pi-fw pi-cog', routerLink: '/blog'},
-    {label: 'Contact Me', icon: 'pi pi-fw pi-envelope', routerLink: '/contact'}
-  ];
-
+  
   constructor() { }
 
   ngOnInit() {

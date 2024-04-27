@@ -1,0 +1,35 @@
+/* YourComponent.component.css */
+.mobile-menu {
+  display: none; /* Hide by default on desktop */
+}
+
+.desktop-menu {
+  display: block; /* Show by default on desktop */
+}
+
+/* Media query for mobile */
+@media screen and (max-width: 768px) {
+  .mobile-menu {
+    display: block; /* Show on mobile */
+  }
+
+  .desktop-menu {
+    display: none; /* Hide on mobile */
+  }
+}
+
+
+//tabmenu
+.custom-tabMenu {
+  background-color: rgb(53, 53, 53);
+
+  ::ng-deep .p-tabmenu-nav {
+    background-color: rgb(53, 53, 53);
+    margin-bottom: 0 !important;
+  }
+
+  ::ng-deep .p-tabmenu-nav a {
+    color: var(--white-text);
+    text-decoration: none; /* Remove underline */
+  }
+}

@@ -163,18 +163,3 @@
 .black-text:hover {
   color: var(--gray-400);
 }
-
-//tabmenu
-.custom-tabMenu {
-  background-color: rgb(53, 53, 53);
-
-  ::ng-deep .p-tabmenu-nav {
-    background-color: rgb(53, 53, 53);
-    margin-bottom: 0 !important;
-  }
-
-  ::ng-deep .p-tabmenu-nav a {
-    color: var(--white-text);
-    text-decoration: none; /* Remove underline */
-  }
-}
