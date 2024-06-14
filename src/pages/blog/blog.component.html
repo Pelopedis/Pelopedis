@@ -5,7 +5,7 @@
 <div class="page-content">
   <div class="blog-container">
     <div class="blog-header">
-      <h1>{{title}}</h1>
+      <h1 class="title-color">{{title}}</h1>
       <p>{{subtitle}}</p>
     </div>
     <div class="blog-content">
@@ -13,7 +13,7 @@
         <div class="blog-post">
           <h2>{{post.title}}</h2>
           <p class="date">{{post.date}}</p>
-          <div class="content">{{post.content}}</div>
+          <div class="content" [innerHTML]="post.content"></div>
       </div>
     } @empty {}
     </div>

@@ -3,6 +3,7 @@ import { TabMenuModule } from 'primeng/tabmenu';
 import { ContactComponent } from '../landing-page/contact/contact.component';
 import { WelcomeMessageComponent } from '../landing-page/welcome-message/welcome-message.component';
 import { MenuComponent } from '../shared-components/menu/menu.component';
+import { BlogService } from '../../services/blog.service';
 
 @Component({
   selector: 'app-blog',
@@ -16,23 +17,15 @@ import { MenuComponent } from '../shared-components/menu/menu.component';
     WelcomeMessageComponent]
 })
 export class BlogComponent implements OnInit {
+  posts: any[] = [];
   title: string = 'My Blog';
   subtitle: string = 'Welcome to my blog!';
 
-  posts = [
-    {
-      title: 'First Post',
-      date: 'June 14, 2024',
-      content: 'This is the content of the first post. It\'s a short paragraph to show how content might look.'
-    },
-    {
-      title: 'Second Post',
-      date: 'June 15, 2024',
-      content: 'This is the content of the second post. It\'s another short paragraph to show more content.'
-    }
-  ];
+  constructor(private blogService: BlogService) {}
 
-  constructor() { }
-
-  ngOnInit() {}
+  ngOnInit(): void {
+    this.blogService.getPosts().subscribe((data: any[]) => {
+      this.posts = data;
+    });
+  }
 }
