@@ -27,13 +27,16 @@ export class MenuComponent {
 
   constructor() { 
     this.checkScreenWidth();
-    window.addEventListener('resize', () => {
-      this.checkScreenWidth();
-    });
+    if (window) {
+      window?.addEventListener('resize', () => {
+        this.checkScreenWidth();
+      });
+    }
   }
 
   checkScreenWidth() {
-    this.isMobile = window.innerWidth <= 768; // Adjust breakpoint as needed
+    this.isMobile = window?.innerWidth <= 768; // Adjust breakpoint as needed
+    console.log("🚀 ~ MenuComponent ~ checkScreenWidth ~ window:", window)
   }
 
   toggleMenu() {

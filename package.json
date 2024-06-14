@@ -25,6 +25,7 @@
     "@types/aos": "^3.0.7",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
+    "compass-mixins": "^0.12.12",
     "express": "^4.18.2",
     "primeicons": "^7.0.0",
     "primeng": "^17.12.0",
