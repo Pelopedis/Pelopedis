@@ -4,6 +4,7 @@ import { LoaderService } from '../../services/loader.service';
 import { SpinnerComponent } from '../shared-components/spinner/spinner.component';
 import { LinkifyPipe } from '../../pipes/linkify.pipe';
 import { CommonModule } from '@angular/common';
+import { MenuComponent } from '../shared-components/menu/menu.component';
 
 @Component({
   selector: 'app-cv',
@@ -11,7 +12,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './cv.component.html',
   styleUrls: ['./cv.component.scss'],
   providers: [LoaderService],
-  imports: [SpinnerComponent, LinkifyPipe, CommonModule]
+  imports: [SpinnerComponent, LinkifyPipe, CommonModule, MenuComponent]
 })
 export class CvComponent implements OnInit {
   skills: any;
