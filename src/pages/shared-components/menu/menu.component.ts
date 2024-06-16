@@ -13,8 +13,7 @@ import { TabMenuModule } from 'primeng/tabmenu';
   styleUrl: './menu.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class MenuComponent { 
-  
+export class MenuComponent {
   showMenu: boolean = true;
   isMobile: boolean = false;
 
@@ -26,20 +25,20 @@ export class MenuComponent {
   ];
 
   constructor() { 
-    this.checkScreenWidth();
-    if (window) {
-      window?.addEventListener('resize', () => {
-        this.checkScreenWidth();
-      });
-    }
+    //this.checkScreenWidth();
+    // if (window) {
+    //   window?.addEventListener('resize', () => {
+    //     this.checkScreenWidth();
+    //   });
+    // }
   }
 
-  checkScreenWidth() {
-    this.isMobile = window?.innerWidth <= 768; // Adjust breakpoint as needed
-    console.log("🚀 ~ MenuComponent ~ checkScreenWidth ~ window:", window)
-  }
+  // checkScreenWidth() {
+  //   this.isMobile = window?.innerWidth <= 768; // Adjust breakpoint as needed
+  //   console.log("🚀 ~ MenuComponent ~ checkScreenWidth ~ window:", window)
+  // }
 
-  toggleMenu() {
-    this.showMenu = !this.showMenu;
-  }
+  // toggleMenu() {
+  //   this.showMenu = !this.showMenu;
+  // }
 }
