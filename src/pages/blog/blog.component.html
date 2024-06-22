@@ -13,8 +13,8 @@
         <div class="blog-post">
           <h2>{{post.title}}</h2>
           <p class="date">{{post.date}}</p>
-          <div class="content" [innerHTML]="post.content"></div>
-      </div>
+          <div [innerHTML]="post.content | safeHtml"></div>
+        </div>
     } @empty {}
     </div>
   </div>

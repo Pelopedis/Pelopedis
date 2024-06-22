@@ -28,6 +28,8 @@
     "bootstrap": "^5.3.3",
     "compass-mixins": "^0.12.12",
     "express": "^4.18.2",
+    "highlight.js": "^11.9.0",
+    "ngx-highlightjs": "^12.0.0",
     "primeicons": "^7.0.0",
     "primeng": "^17.18.1",
     "rxjs": "~7.8.0",

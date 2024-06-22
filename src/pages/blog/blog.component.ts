@@ -4,6 +4,8 @@ import { ContactComponent } from '../landing-page/contact/contact.component';
 import { WelcomeMessageComponent } from '../landing-page/welcome-message/welcome-message.component';
 import { MenuComponent } from '../shared-components/menu/menu.component';
 import { DataApiService } from '../../services/data-api.service';
+import { SafeHtmlPipe } from '../../pipes/safe-html.pipe';
+import { HIGHLIGHT_OPTIONS, HighlightModule } from 'ngx-highlightjs';
 
 @Component({
   selector: 'app-blog',
@@ -14,7 +16,17 @@ import { DataApiService } from '../../services/data-api.service';
     ContactComponent,
     TabMenuModule,
     MenuComponent,
-    WelcomeMessageComponent]
+    WelcomeMessageComponent,
+    HighlightModule,
+    SafeHtmlPipe],
+    providers: [
+      {
+        provide: HIGHLIGHT_OPTIONS,
+        useValue: {
+          fullLibraryLoader: () => import('highlight.js')
+        }
+      }
+    ]
 })
 export class BlogComponent implements OnInit {
   posts: any;

@@ -1,6 +1,7 @@
 @import "primeicons/primeicons.css";
 @import "primeng/resources/primeng.css";
-@import '//classpath:compass/css3';
+@import "//classpath:compass/css3";
+@import 'highlight.js/styles/a11y-dark.css'; // Adjust the path as per your theme preference
 
 //angular
 :root {
