@@ -31,4 +31,8 @@ export class DataApiService {
   getWorkHistory(): Promise<any> {
     return firstValueFrom(this.http.get('assets/work-experience.json'));
   }
+
+  getPosts(): Promise<any> {
+    return firstValueFrom(this.http.get('assets/posts.json'));
+  }
 }

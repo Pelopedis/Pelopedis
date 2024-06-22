@@ -36,9 +36,9 @@
                             <em>{{experience.company}}</em>
                             <p><strong>Tecnologies:</strong> {{experience.technologies}}</p>
                             <div class="d-flex flex-row">
-                                <p class="year p-2 d-flex justify-content-center">{{experience.period}}</p>
+                                <p class="year p-2 d-flex justify-content-center rounded cst-p-top cst-p-bottom">{{experience.period}}</p>
                                 <button (click)="detailOnClick(experience)" type="button"
-                                class="btn btn-primary">
+                                class="btn btn-primary custom-button-padding">
 
                                 @if (!experience.detailIsDisplayed) { <span>▼ View Details</span> }
                                 @if (experience.detailIsDisplayed) { <span>▲ Hide Details</span> } 
@@ -46,7 +46,7 @@
                             </div>
 
                             @if (experience.detailIsDisplayed) {
-                                <p>
+                                <p class="pt-3">
                                     @for(mission of experience.missions; track mission; let index = $index) {
                                         <span>
                                             <strong>{{index+1}}: </strong>{{mission}} <br>
@@ -59,8 +59,8 @@
                 </ul>
             </div>
 
-            <div class="col-lg-2 col-md-12 aos-init aos-animate pl-0" data-aos="fade-up" data-aos-delay="300">
-                <div class="container row pl-0">
+            <div class="col-lg-2 col-md-12 aos-init aos-animate custom-language-padding" data-aos="fade-up" data-aos-delay="300">
+                <div class="container row custom-language-padding">
                     <div class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
                         <h4><strong>Languages</strong></h4>
                         <div class="noProgress langue">

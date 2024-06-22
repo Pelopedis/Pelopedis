@@ -71,3 +71,39 @@ fa-icon{
     border-radius: 50px;
     transition: all 0.3s ease-in-out;
   }
+
+  .custom-language-padding{
+    padding-left: 0%;
+
+    //when mobile
+    @media (max-width: 768px) {
+        padding-left: 3% !important;
+    }
+  }
+
+  .custom-button-padding{
+    padding-bottom: 0%;
+
+    //when mobile
+    @media (max-width: 768px) {
+        padding-bottom: 50px !important;
+    }
+  }
+
+  .cst-p-top{
+    padding-top: 0%;
+
+    //when mobile
+    @media (max-width: 768px) {
+        padding-top: 17px !important;
+    }
+  }
+
+  .cst-p-bottom{
+    padding-bottom: 0%;
+
+    //when mobile
+    @media (max-width: 768px) {
+        padding-bottom: 40px !important;
+    }
+  }

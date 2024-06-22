@@ -3,12 +3,12 @@ import { TabMenuModule } from 'primeng/tabmenu';
 import { ContactComponent } from '../landing-page/contact/contact.component';
 import { WelcomeMessageComponent } from '../landing-page/welcome-message/welcome-message.component';
 import { MenuComponent } from '../shared-components/menu/menu.component';
-import { BlogService } from '../../services/blog.service';
+import { DataApiService } from '../../services/data-api.service';
 
 @Component({
   selector: 'app-blog',
   templateUrl: './blog.component.html',
-  styleUrls: ['./blog.component.css'],
+  styleUrls: ['./blog.component.scss'],
   standalone: true,
   imports: [
     ContactComponent,
@@ -17,15 +17,20 @@ import { BlogService } from '../../services/blog.service';
     WelcomeMessageComponent]
 })
 export class BlogComponent implements OnInit {
-  posts: any[] = [];
+  posts: any;
   title: string = 'My Blog';
   subtitle: string = 'Welcome to my blog!';
 
-  constructor(private blogService: BlogService) {}
+  constructor(
+    public dataApi: DataApiService,
+  ) {}
 
-  ngOnInit(): void {
-    this.blogService.getPosts().subscribe((data: any[]) => {
-      this.posts = data;
-    });
+  async ngOnInit(): Promise<void> {
+    await this.loadData();
+
+  }
+
+  private async loadData() {
+    this.posts = await this.dataApi.getPosts();
   }
 }
