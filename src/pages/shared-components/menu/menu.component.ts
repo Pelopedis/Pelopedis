@@ -1,14 +1,25 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { TabMenuModule } from 'primeng/tabmenu';
+import { MenuModule } from 'primeng/menu';
+import { ButtonModule } from 'primeng/button';
+import { ToastModule } from 'primeng/toast';
+import { MessageService } from 'primeng/api';
+import { RouterModule } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
   standalone: true,
   imports: [
     CommonModule,
-    TabMenuModule
+    TabMenuModule,
+    MenuModule,
+    ButtonModule,
+    ToastModule,
+    RouterModule
   ],
+  providers: [MessageService],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -24,21 +35,13 @@ export class MenuComponent {
     {label: 'Contact Me', icon: 'pi pi-fw pi-envelope', routerLink: '/contact'}
   ];
 
-  constructor() { 
-    //this.checkScreenWidth();
-    // if (window) {
-    //   window?.addEventListener('resize', () => {
-    //     this.checkScreenWidth();
-    //   });
-    // }
+  constructor(
+    private router: Router, 
+  ) { 
   }
-
-  // checkScreenWidth() {
-  //   this.isMobile = window?.innerWidth <= 768; // Adjust breakpoint as needed
-  //   console.log("🚀 ~ MenuComponent ~ checkScreenWidth ~ window:", window)
-  // }
-
-  // toggleMenu() {
-  //   this.showMenu = !this.showMenu;
-  // }
+  
+  menuToggle(event: any) {
+    console.log("🚀 ~ MenuComponent ~ menuToggle ~ event:", event)
+    //this.router.navigate(['/about']);
+  }
 }

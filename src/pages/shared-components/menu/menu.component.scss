@@ -1,23 +1,3 @@
-.mobile-menu {
-  display: none; /* Hide by default on desktop */
-}
-
-.desktop-menu {
-  display: block; /* Show by default on desktop */
-}
-
-/* Media query for mobile */
-@media screen and (max-width: 768px) {
-  .mobile-menu {
-    display: block; /* Show on mobile */
-  }
-
-  .desktop-menu {
-    display: none; /* Hide on mobile */
-  }
-}
-
-
 //tabmenu
 .custom-tab-menu {
   background-color: rgb(92, 92, 92);
@@ -33,7 +13,7 @@
   }
 
   ::ng-deep .p-tabmenu-nav a {
-    color: var(--white-text);
+    color: white !important;
     text-decoration: none; /* Remove underline */
   }
 
@@ -42,4 +22,14 @@
   }
 
   //.p-menuitem-link-active{  }
+}
+
+@media screen and (max-width: 768px) {
+  .custom-tab-menu {
+    display: none;
+  }
+
+  .custom-tab-menu-mobile {
+    display: block;
+  }
 }
