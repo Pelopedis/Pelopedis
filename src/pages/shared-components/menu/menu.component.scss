@@ -5,7 +5,6 @@
   justify-content: center;
   align-items: center;
   border-top: 2px solid white;
-  border-bottom: 2px solid white;
 
   ::ng-deep .p-tabmenu-nav {
     background-color: rgb(92, 92, 92);
@@ -22,14 +21,4 @@
   }
 
   //.p-menuitem-link-active{  }
-}
-
-@media screen and (max-width: 768px) {
-  .custom-tab-menu {
-    display: none;
-  }
-
-  .custom-tab-menu-mobile {
-    display: block;
-  }
 }

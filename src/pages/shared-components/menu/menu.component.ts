@@ -6,7 +6,6 @@ import { ButtonModule } from 'primeng/button';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 import { RouterModule } from '@angular/router';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -35,13 +34,5 @@ export class MenuComponent {
     {label: 'Contact Me', icon: 'pi pi-fw pi-envelope', routerLink: '/contact'}
   ];
 
-  constructor(
-    private router: Router, 
-  ) { 
-  }
-  
-  menuToggle(event: any) {
-    console.log("🚀 ~ MenuComponent ~ menuToggle ~ event:", event)
-    //this.router.navigate(['/about']);
-  }
+  constructor() { }
 }
