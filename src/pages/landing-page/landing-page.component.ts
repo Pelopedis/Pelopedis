@@ -8,6 +8,7 @@ import { ContactComponent } from './contact/contact.component';
 import { TabMenuModule } from 'primeng/tabmenu';
 import { MenuComponent } from '../shared-components/menu/menu.component';
 import { WelcomeMessageComponent } from './welcome-message/welcome-message.component';
+import { FooterComponent } from '../shared-components/footer/footer.component';
 
 @Component({
   selector: 'app-landing-page',
@@ -23,6 +24,7 @@ import { WelcomeMessageComponent } from './welcome-message/welcome-message.compo
     ContactComponent,
     TabMenuModule,
     MenuComponent,
-    WelcomeMessageComponent]
+    WelcomeMessageComponent,
+    FooterComponent]
 })
 export class LandingPageComponent {  }
